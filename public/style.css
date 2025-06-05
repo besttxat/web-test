@@ -894,28 +894,63 @@ hr {
   height: 8rem;         /* ขนาดวงกลมเท่ากับความกว้าง */
   max-width: 100%;
 }
-.logo-container {
-  position: relative;
-  display: inline-block;
-  width: 120px; /* ปรับขนาดตามโลโก้ */
-  height: 120px;
+/* แถบบนพื้นหลังสีฟ้าเข้ม */
+.top-blue-bar {
+  background: linear-gradient(to right, #1e50d1, #1a2f91);
+  padding: 10px 20px;
 }
 
-.logo-container img {
-  width: 100%;
+/* กำหนดขนาดแถบและจัดกึ่งกลาง */
+.header {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* จัดเรียงโลโก้ + เมนูในแนวนอน */
+.navBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* กลุ่มโลโก้ */
+.navBar_logo {
+  display: flex;
+  align-items: center;
+}
+
+/* รูปโลโก้ */
+.navBar_logo img {
+  width: 60px;
   height: auto;
-  display: block;
+  margin-right: 10px;
 }
 
+/* ข้อความ "Lucky ประกันภัย" */
 .logo-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   color: white;
+  font-size: 20px;
   font-weight: bold;
-  font-size: 16px;
-  text-align: center;
-  text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
   white-space: nowrap;
+}
+
+/* เมนูด้านขวา */
+.navMenu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* ลิงก์เมนู */
+.nav_items {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 16px;
+}
+
+.nav_items:hover {
+  text-decoration: underline;
 }
