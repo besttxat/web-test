@@ -889,3 +889,8 @@ hr {
   padding-right: 20rem;
   font-size: 1.3rem;
 }
+.logo {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+}
