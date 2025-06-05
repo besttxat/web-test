@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Real state</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="style2.css">
+  <link rel="stylesheet" type="text/css" href="style3.css">
+  <link rel="stylesheet" type="text/css" href="style4.css">
+  <link rel="stylesheet" type="text/css" href="style5.css">
+
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- ใช้ Font Awesome 6 CDN -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+  
+  <style>
+    /* Footer Styles */
+    .main-footer {
+      background: linear-gradient(135deg, #4a90e2, #5ba3f5);
+      color: white;
+      padding: 40px 0;
+      margin-top: 50px;
+    }
+
+    .footer-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr 1.5fr;
+      gap: 40px;
+      align-items: start;
+    }
+
+    .footer-company {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .footer-company h3 {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 15px;
+      color: white;
+    }
+
+    .footer-company p {
+      font-size: 14px;
+      line-height: 1.6;
+      margin-bottom: 20px;
+      color: rgba(255, 255, 255, 0.9);
+    }
+
+    .footer-social {
+      display: flex;
+      gap: 15px;
+    }
+
+    .footer-social a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 50%;
+      color: white;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .footer-social a:hover {
+      background: rgba(255, 255, 255, 0.3);
+      transform: translateY(-2px);
+    }
+
+    .footer-column h4 {
+      font-size: 16px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      color: white;
+    }
+
+    .footer-column ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .footer-column ul li {
+      margin-bottom: 12px;
+    }
+
+    .footer-column ul li a {
+      color: rgba(255, 255, 255, 0.9);
+      text-decoration: none;
+      font-size: 14px;
+      transition: color 0.3s ease;
+    }
+
+    .footer-column ul li a:hover {
+      color: white;
+      text-decoration: underline;
+    }
+
+    .footer-contact h4 {
+      font-size: 16px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      color: white;
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 15px;
+      font-size: 14px;
+      color: rgba(255, 255, 255, 0.9);
+    }
+
+    .contact-item strong {
+      color: white;
+      margin-right: 10px;
+      min-width: 80px;
+    }
+
+    .contact-email {
+      color: rgba(255, 255, 255, 0.9);
+      text-decoration: none;
+    }
+
+    .contact-email:hover {
+      color: white;
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      .footer-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        text-align: center;
+      }
+
+      .footer-social {
+        justify-content: center;
+      }
+    }
+
+    @media (max-width: 1024px) {
+      .footer-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <section class="first">
+
+    <!---------------- Header -------------------->
+    <div class="top-blue-bar">
+    <header class="header">
+      <nav class="navBar">
+        <a href="#" class="navBar_logo">
+          <p>Lucky 
+            ประกันภัย
+          </p>
+        </a>
+
+        <ul class="navMenu">
+
+          <li><a href="#" class="nav_items">ประกันรถยนต์</a></li>
+          <li><a href="#" class="nav_items">ประกันเดินทาง</a></li>
+          <li><a href="#" class="nav_items">ประกันสุขภาพ</a></li>
+          <li><a href="#" class="nav_items">ประกันอุบัติเหตุ</a></li>
+          <li><a href="#" class="nav_items">ประกันบ้าน</a></li>
+          <li><a href="#" class="nav_items">ประกันอื่นๆ</a></li>
+          <li><a href="#" class="nav_items">ประกันโรงงาน</a></li>
+
+        </ul>
+      </nav>
+    </div>
+    </header>
+
+    <!-------------------Brand-------------------------->
+
+    <div class="Brand">
+      <div class="flexBox1">
+        <div class="heading">
+
+          <h1>Lucky ดูแลทุกช่วงเวลา</h1>
+          
+          <h5>เปรียบเทียบกว่า10บริษัท</h5>
+          <p></p>
+
+        </div>
+
+        <div class="search">
+
+          <!-- <input id="searchBox" type="text" placeholder="Enter Zipcode to search properties"> -->
+
+          <!-- <label id="lbl">Search Now!</label> -->
+          <button id="btn1">ติดต่อเลยเลย</button>
+        </div>
+      </div>
+
+      <div class="main_image">
+        <img id="img1" src="/lucky.png" width="100%">
+      </div>
+
+      <div class="social text-gray" style="font-size: 0.5rem;">
+        <a href="#" class="social-media"><i class="fab fa-facebook fa-4x"></i></a>
+
+        <a href="#" class="social-media"><i class="fab fa-instagram fa-4x"></i></a>
+
+        <a href="#" class="social-media"><i class="fab fa-twitter fa-4x"></i></i></a>
+
+        <a href="#" class="social-media"><i class="fab fa-linkedin fa-4x"></i></a>
+
+      </div>
+
+    </div>
+
+    <!-------------------Sponsers-------------------------->
+    <!--<div class="partners">
+      <h3>Our Amazing Partners</h3>
+      <ul class="partner_list">
+        <li>
+          <p id="buzz">Buzz</p>
+        </li>
+        <li>
+          <p id="chase">CHASE</p>
+        </li>
+        <li>
+          <p id="mircosoft"><i class="fab fa-microsoft">&nbsp;</i>Microsoft</p>
+        </li>
+        <li>
+          <p id="gucc">GUCC</p>
+        </li>
+        <li>
+          <p id="air"><i class="fab fa-airbnb"></i>&nbsp;airbnb</p>
+        </li>
+        <li>
+          <p id="uber">UBER</p>
+        </li>
+      </ul>
+   </div>-->
+
+  </section>
+
+  <!-- -----------------Second  ------------------------>
+  
+  <section class="third">
+    <div class="deal">
+
+      <div class="deal_heading">
+        <h2>โปรโมชั่นพิเศษ</h2>
+        <p>Colonel gravity get thought fat smiling add but. Wonder twenty hunted and put income set desire
+          expect.</p>
+      </div>
+      <div class="vew_btn">
+        <button id="btn2">ดูโปรโมชั่นทั้งหมด</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="four">
+    <div class="property_type_heading">
+      <div class="property_type">
+        <h4>รถยนต์</h4>
+        <h4>เดินทาง</h4>
+        <h4>สุขภาพ</h4>
+        <h4>อุบัติเหตุ</h4>
+        <h4>บ้าน/อัคคีภัย</h4>
+        <h4>โรงงาน</h4>
+      </div>
+
+      <div class="property_type_images">
+
+        <div class="home1 box">
+          <img class="home" src="https://images.unsplash.com/photo-1549517045-bc93de075e53?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYzNTA4MzYyMA&ixlib=rb-1.2.1&q=85">
+        </div>
+
+        <div class="home2 box">
+          <img class="home" src="https://images.unsplash.com/photo-1430285561322-7808604715df?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYzNTA4MzYyMA&ixlib=rb-1.2.1&q=85">
+        </div>
+
+        <div class="home3 box">
+          <img class="home" src="https://images.unsplash.com/photo-1599809275671-b5942cabc7a2?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYzNTA4MzY4MA&ixlib=rb-1.2.1&q=85">
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  
+  <section class="second">
+    <h2>สิทธิประโยชน์จาก Lucky</h2>
+    <div class="parent">
+  
+      <div class="div1 col">
+        <i class="fa-solid fa-0"></i>
+        <h3>ผ่อน 0%</h3>
+        <p>โปรโมชั่นผ่อนสบายๆ</p>
+      </div>
+  
+      <div class="div2 col">
+        <i class="fa-solid fa-phone"></i>
+        <h3>บริการ 24 ชม.</h3>
+        <p>ให้คำปรึกษา24 ชม.</p>
+      </div>
+  
+      <div class="div3 col">
+        <i class="fa-solid fa-percent"></i>
+        <h3>ส่วนลดตลอดปี</h3>
+        <p>เปรียบเทียบราคา</p>
+      </div>
+  
+    </div>
+  </section>
+  <!-- -----------------Third ------------------------>
+  
+  <!-- -----------------fourth ------------------------>
+  
+  <!-- -----------------Fifth ------------------------>
+  <section class="five">
+    <h2 id="feature_heading">พันธมิตรของเรา</h2>
+    <div class="featureBox">
+
+      <div class="feature">
+        <img class="feature_image" src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYzNTA4MzMxMQ&ixlib=rb-1.2.1&q=85.jpg">
+        <img class="feature2_image" src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYzNTA4MzU2NQ&ixlib=rb-1.2.1&q=85">
+      </div>
+
+      <div class="feature_text">
+        <h2>บริษัทประกันภัยชั้นนำทั่วประเทศ</h2>
+        <p id="feature_text1">It is a long established fact that a reader will be distracted by 
+            the readable content of a page when looking at its layout. The point of using Lorem 
+            Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here </p>
+
+        <!--<div class="budget">
+
+          <div class="budget_heading">
+            <h3>Budget</h3>
+            <h3>Size</h3>
+            <h3>Type</h3>
+          </div>
+          <div class="budget_value">
+            <p>Confidential</p>
+            <p>1200 m<sup>2</sup></p>
+            <p>Office</p>
+          </div>
+
+          <div class="budget_heading">
+            <h3>Status</h3>
+            <h3>Location</h3>
+            <h3>Flat</h3>
+          </div>
+          <div class="budget_value">
+            <p>Completed</p>
+            <p>Switzerland</p>
+            <p>8 Rooms</p>
+          </div>-->
+          <button id="btn3">ติดต่อเลย"</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- -----------------Sixth ------------------------>
+  <section class="six">
+    <div class="goodwill">
+      <h2>แชร์ประสบการณ์จากผู้ใช้บริการLucky</h2>
+    </div>
+
+    <div class="comments">
+
+      <div class="card1 comment">
+
+        <div class="stars">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+        </div>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni consequuntur eaque odio voluptatum
+          expedita. Ut nulla voluptatibus aut modi laboriosam?</p>
+
+        <div class="profile">
+          <img src="https://images.unsplash.com/photo-1542909168-82c3e7fdca5c?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYzNTA4Mzc0Mg&ixlib=rb-1.2.1&q=85">
+          <div class="dp">
+            <h1>Best</h1>
+            <p>Bangkok</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="card2 comment">
+        <div class="stars">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni consequuntur eaque odio voluptatum
+          expedita. Ut nulla voluptatibus aut modi laboriosam?</p>
+        <div class="profile">
+          <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYzNTA4MzgzNw&ixlib=rb-1.2.1&q=85">
+          <div class="dp">
+            <h1>Aodie</h1>
+            <p>Nakhon Pathom</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card3 comment">
+        <div class="stars">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni consequuntur eaque odio voluptatum
+          expedita. Ut nulla voluptatibus aut modi laboriosam?</p>
+        <div class="profile">
+          <img src="https://images.unsplash.com/photo-1598411072028-c4642d98352c?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYzNTA4Mzg2Mw&ixlib=rb-1.2.1&q=85">
+          <div class="dp">
+            <h1>Tung</h1>
+            <p>Bangkok</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- -----------------Seventh ------------------------>
+  <!--<section class="seven">
+    <div class="partners">
+
+      <ul class="partner_list">
+        <li>
+          <p id="air"><i class="fab fa-airbnb"></i>&nbsp;airbnb</p>
+        </li>
+        <li>
+          <p id="buzz">Buzz</p>
+        </li>
+        <li>
+          <p id="chase">CHASE</p>
+        </li>
+
+        <li>
+          <p id="uber">UBER</p>
+        </li>
+        <li>
+          <p id="mircosoft"><i class="fab fa-microsoft">&nbsp;</i>Microsoft</p>
+        </li>
+      </ul>
+    </div>
+
+    <div class="call">
+      <p>Give us a call 1-888-111-2222 and we can set you up, or <a href="#">check our pricing plans</a></p>
+    </div>-->
+  </section>
+
+  <!-- -----------------Eight ------------------------>
+  <section class="eight">
+    <h3>Get Our Newsletter</h3>
+    <h4>To join the worldwide community</h4>
+    <div class="email">
+      <input id="mail" type="email" placeholder="Type your Email Address">
+      <button id="btn4">Send Now</button>
+    </div>
+
+    <hr>
+    <footer>
+
+      <p></p>
+    </footer>
+
+  </section>
+
+  <!-- New Footer Section -->
+  <footer class="main-footer">
+    <div class="footer-container">
+      <!-- Company Info -->
+      <div class="footer-company">
+        <h3>บริษัท สิงคลี่ อินชัวรันส์ โบรเกอร์ จำกัด</h3>
+        <p>123 ถนนอมรนาถ แขวงราชเทวี เขตราชเทวี กรุงเทพฯ 10230</p>
+        <div class="footer-social">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-line"></i></a>
+        </div>
+      </div>
+
+      <!-- Insurance Types -->
+      <div class="footer-column">
+        <h4>หลักประกันประเภท</h4>
+        <ul>
+          <li><a href="#">ประกันรถยนต์</a></li>
+          <li><a href="#">ประกันเดินทาง</a></li>
+          <li><a href="#">ประกันสุขภาพ</a></li>
+          <li><a href="#">ประกันอุบัติเหตุ</a></li>
+          <li><a href="#">ประกันบ้าน</a></li>
+          <li><a href="#">ประกันอื่น ๆ</a></li>
+        </ul>
+      </div>
+
+      <!-- Services -->
+      <div class="footer-column">
+        <h4>บริการลูกค้า</h4>
+        <ul>
+          <li><a href="#">เคลมประกัน</a></li>
+          <li><a href="#">ตรวจสอบกรมธรรม์</a></li>
+          <li><a href="#">สถานการประกันภัย (ตร.)</a></li>
+          <li><a href="#">แจ้งปัญหาการใช้บริการ</a></li>
+          <li><a href="#">คู่มือบริษัท</a></li>
+          <li><a href="#">โรงพยาบาล</a></li>
+          <li><a href="#">สิทธิประโยชน์สมาชิก</a></li>
+        </ul>
+      </div>
+
+      <!-- About -->
+      <div class="footer-column">
+        <h4>บริษัท</h4>
+        <ul>
+          <li><a href="#">เกี่ยวกับเรา</a></li>
+          <li><a href="#">ติดต่อเรา</a></li>
+          <li><a href="#">ร่วมงานกับเรา</a></li>
+          <li><a href="#">ข่าวบริษัท</a></li>
+          <li><a href="#">นักลงทุน</a></li>
+          <li><a href="#">คำถามที่พบบ่อย</a></li>
+          <li><a href="#">ประกันประกันภัย</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="footer-contact">
+        <h4>ติดต่อสอบถาม</h4>
+        <div class="contact-item">
+          <strong>095-165-5348</strong>
+        </div>
+        <div class="contact-item">
+          <strong>02-222-2222</strong>
+        </div>
+        <div class="contact-item">
+          <strong>เวลาทำการ:</strong>
+          <span>08.00-17.00</span>
+        </div>
+        <div class="contact-item">
+          <strong>อีเมล:</strong>
+          <a href="mailto:lucky.business@gmail.com" class="contact-email">lucky.business@gmail.com</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
