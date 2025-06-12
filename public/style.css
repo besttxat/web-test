@@ -918,7 +918,10 @@ hr {
 .navBar_logo {
   display: flex;
   align-items: center;
+  margin-left: 0;
+  padding-left: 0;
 }
+
 
 /* รูปโลโก้ */
 .navBar_logo img {
