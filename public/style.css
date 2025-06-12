@@ -895,42 +895,42 @@ hr {
   max-width: 50%;
 }
 /* แถบบนพื้นหลังสีฟ้าเข้ม */
+/* ทำให้แถบบนสุดเป็นพื้นหลังน้ำเงิน */
 .top-blue-bar {
-  background: linear-gradient(to right, #1e50d1, #1a2f91);
-  padding: 10px 20px;
+  background-color: #0d47a1; /* น้ำเงินเข้ม */
+  padding: 0;
+  margin: 0;
 }
 
-/* กำหนดขนาดแถบและจัดกึ่งกลาง */
+/* ปรับโครงสร้าง header ให้ไม่มี padding/margin */
 .header {
-  max-width: 1200px;
-  margin: 0 auto;
+  margin: 0;
+  padding: 0;
 }
 
-/* จัดเรียงโลโก้ + เมนูในแนวนอน */
+/* Navbar หลัก */
 .navBar {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap;
+  align-items: center;
+  padding: 10px 20px;
+  margin: 0;
 }
 
-/* กลุ่มโลโก้ */
+/* กล่องโลโก้ */
 .navBar_logo {
   display: flex;
   align-items: center;
-  margin-left: 0;
-  padding-left: 0;
 }
 
-
 /* รูปโลโก้ */
-.navBar_logo img {
+#logoluckyy {
   width: 60px;
   height: auto;
   margin-right: 10px;
 }
 
-/* ข้อความ "Lucky ประกันภัย" */
+/* ข้อความโลโก้ */
 .logo-text {
   color: white;
   font-size: 20px;
@@ -953,6 +953,7 @@ hr {
   margin-left: 20px;
   font-size: 16px;
 }
+
 
 .nav_items:hover {
   text-decoration: underline;
