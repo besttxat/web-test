@@ -88,7 +88,7 @@ a {
   color: rgb(243, 235, 235);
   /* border: 1px solid black; */
   font-size: 1.5rem;
-  padding-right: 3rem;
+  padding-right: 2rem;
 }
 
 /*------------------------- Brand ---------------------- */
@@ -892,7 +892,7 @@ hr {
 .logoluckyy {
   width: 8rem;          /* ขนาดวงกลม */
   height: 8rem;         /* ขนาดวงกลมเท่ากับความกว้าง */
-  max-width: 100%;
+  max-width: 50%;
 }
 /* แถบบนพื้นหลังสีฟ้าเข้ม */
 .top-blue-bar {
