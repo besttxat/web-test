@@ -983,59 +983,41 @@ hr {
   white-space: nowrap;
 }
 
-/* ทำให้ body เต็มสูงสุดของหน้าจอ */
 html, body {
   height: 100%;
   margin: 0;
   padding: 0;
   display: flex;
   flex-direction: column;
+  font-family: sans-serif;
 }
 
-/* ครอบทุกเนื้อหา (ยกเว้น footer) */
 .main-wrapper {
   flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
-/* Footer สไตล์ */
 .main-footer {
   background-color: #0d47a1;
   color: white;
   padding: 40px 20px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 20px;
 }
 
 .footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
-  width: 100%;
-  max-width: 1400px;
-  margin: auto;
 }
 
-.footer-column, .footer-company, .footer-contact {
-  flex: 1 1 200px;
+.footer-company, .footer-column {
   min-width: 200px;
-}
-
-.footer-company h3,
-.footer-column h4,
-.footer-contact h4 {
-  margin-bottom: 10px;
-}
-
-.footer-column ul,
-.footer-company p {
-  margin: 0;
-  padding: 0;
-  list-style: none;
 }
 
 .footer-social a {
   color: white;
   margin-right: 10px;
-  font-size: 18px;
+  text-decoration: none;
 }
